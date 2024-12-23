@@ -10,13 +10,13 @@
     - primary meta tags
   -->
   <title>pymes.ai - Agencia de Inteligencia Artificial</title>
-  <meta name="title" content="Metalink - Discover rate collection or Arts & NFTs">
-  <meta name="description" content="This is a NFT html template made by codewithsadee">
+  <meta name="title" content="pymes.ai - Agencia de Inteligencia Artificial">
+  <meta name="description" content="Pagina web de pymes.ai por Luis Miguel">
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./logo-small.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/mini-logo-pymesai.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
   <!-- 
@@ -58,14 +58,14 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
   const apiKey = "fd373f78-6156-4742-b971-a65976a17654"; // Substitute with your Public key from Vapi Dashboard.
   const buttonConfig = {
     position: "bottom-right", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
-    offset: "40px", // decide how far the button should be from the edge
-    width: "50px", // min-width of the button
-    height: "50px", // height of the button
+    offset: "20px", // decide how far the button should be from the edge
+    width: "40px", // min-width of the button
+    height: "40px", // height of the button
     idle: { // button state when the call is not active.
       color: `rgb(93, 254, 202)`, 
       type: "pill", // or "round"
       title: "Tienes dudas?", // only required in case of Pill
-      subtitle: "Habla con nuestro asistente IA", // only required in case of pill
+      subtitle: "Habla con nuestra IA", // only required in case of pill
       icon: `https://unpkg.com/lucide-static@0.321.0/icons/phone.svg`,
     },
     loading: { // button state when the call is connecting
@@ -119,28 +119,28 @@ class="btn-wsp" target="-blank">
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#">
-        <img src="./assets/images/logo-pymesai.svg" width="40" height="40" alt="Metalink home" class="logo-small">
-        <img src="./assets/images/logo-pymesai.svg" width="126" height="28" alt="Metalink home" class="logo">
+      <a href="#top">
+        <img src="./assets/images/logo-pymesai.svg" width="130" height="70" alt="Metalink home" class="logo-small">
+        <img src="./assets/images/logo-pymesai.svg" width="200" height="140" alt="Metalink home" class="logo">
       </a>
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link label-lg link:hover">Inicio</a>
+            <a href="#inicio" class="navbar-link label-lg link:hover">Inicio</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link label-lg link:hover">Servicios</a>
+            <a href="#servicios" class="navbar-link label-lg link:hover">Servicios</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link label-lg link:hover">Sobre Nosotros</a>
+            <a href="#nosotros" class="navbar-link label-lg link:hover">Sobre Nosotros</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link label-lg link:hover">Contactanos</a>
+            <a href="https://api.whatsapp.com/send/?phone=573332905349&text=Hola%2C+deseo+m%C3%A1s+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0" class="navbar-link label-lg link:hover">Contactanos</a>
           </li>
 
           <!-- <li>
@@ -157,8 +157,7 @@ class="btn-wsp" target="-blank">
           data-cal-link="luis-miguel-giraldo-gonzalez-ttqikw/consulta-de-asesoramiento" 
           data-cal-namespace="consulta-de-asesoramiento" 
           data-cal-config='{"layout":"month_view"}' 
-          style="padding: 10px 20px; background-color: #6b26d9; color: white; border: none; border-radius: 50px; cursor: pointer;"
-          class="cta-button">
+          class="btn btn-primary text-center">
           Agenda tu cita gratis
         </button>
 
@@ -184,7 +183,7 @@ class="btn-wsp" target="-blank">
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
+      <section id="inicio" class="section hero" aria-label="home">
         <div class="container">
 
           <h1 class="headline-lg hero-title">
@@ -201,9 +200,7 @@ class="btn-wsp" target="-blank">
         </div>
       </section>
 
-
-
-      <section class="section top-collection" aria-labelledby="collection-label">
+      <section id="servicios" class="section top-collection" aria-labelledby="collection-label">
         <div class="container">
       
           <h2 class="headline-md section-title text-center" id="collection-label">Nuestros Servicios</h2>
@@ -213,8 +210,8 @@ class="btn-wsp" target="-blank">
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">Asistentes de voz con IA</a>
-                </h3>
-                <figure class="card-banner img-holder small-logo">
+                </h3><br>
+                <figure class="card-banner small-logo">
                   <img src="./assets/images/phone-call.png" loading="lazy" alt="Sports Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
@@ -227,9 +224,9 @@ class="btn-wsp" target="-blank">
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">Chatbots con IA </a>
-                </h3>
-                <figure class="card-banner img-holder small-logo">
-                  <img src="./assets/images/showcase-4.jpg" loading="lazy" alt="Photography Collection" class="img-cover">
+                </h3><br>
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/chatbot.png" loading="lazy" alt="Photography Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
                   <p class="card-text">Diseñamos e implementamos chatbots inteligentes (<strong><u>Whatshapp</u></strong>, Pagina Web, etc..) con IA para mejorar el soporte al cliente y automatizar interacciones rutinarias.</p>
@@ -241,9 +238,9 @@ class="btn-wsp" target="-blank">
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">Hiperautomatizaciones con IA</a>
-                </h3>
-                <figure class="card-banner img-holder small-logo">
-                  <img src="./assets/images/showcase-5.jpg" loading="lazy" alt="Illustrations Collection" class="img-cover">
+                </h3><br>
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/workflow.png" loading="lazy" alt="Illustrations Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
                   <p class="card-text">Creamos soluciones de automatización de flujos de trabajo personalizadas para optimizar tus procesos, aumentar la productividad y agilizar las operaciones para lograr la máxima eficiencia.</p>
@@ -255,9 +252,9 @@ class="btn-wsp" target="-blank">
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">Consultoría en IA</a>
-                </h3>
-                <figure class="card-banner img-holder small-logo">
-                  <img src="./assets/images/showcase-6.gif" loading="lazy" alt="Animations Collection" class="img-cover">
+                </h3><br>
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/consultoria.png" loading="lazy" alt="Animations Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
                   <p class="card-text">Ofrecemos asesoría experta para integrar la IA en tus operaciones, mejorar la experiencia del cliente y aprovechar los datos de manera efectiva.</p>
@@ -269,13 +266,14 @@ class="btn-wsp" target="-blank">
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">Aplicaciones IA Personalizadas</a>
-                </h3>
-                <figure class="card-banner img-holder small-logo">
-                  <img src="./assets/images/showcase-6.gif" loading="lazy" alt="Animations Collection" class="img-cover">
+                </h3><br>
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/app-development.png" loading="lazy" alt="Animations Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
                   <p class="card-text">Desarrollamos aplicaciones IA a medida, adaptadas a tus necesidades específicas, ofreciendo soluciones innovadoras para los desafíos complejos de tu negocio.</p>
                 </div>
+                <div class="coming-soon">Próximamente</div>
               </div>
             </li>
 
@@ -284,15 +282,15 @@ class="btn-wsp" target="-blank">
                 <h3 class="title-md card-title text-center">
                   <a href="#" class="link:hover">RAG</a>
                 </h3>
-                <figure class="card-banner img-holder small-logo">
-                  <img src="./assets/images/showcase-6.gif" loading="lazy" alt="Animations Collection" class="img-cover">
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/rag.png" loading="lazy" alt="Animations Collection" class="img-cover">
                 </figure>
                 <div class="card-content">
                   <p class="card-text">Combinamos la generación de respuestas con la recuperación de información relevante, mejorando la precisión y relevancia en tiempo real para una interacción más eficiente.</p>
                 </div>
+                <div class="coming-soon">Próximamente</div>
               </div>
             </li>
-
 
           </ul>
       
@@ -309,447 +307,147 @@ class="btn-wsp" target="-blank">
         - #DISCOVER ITEM
       -->
 
-      <section class="section discover" aria-labelledby="discover-label">
+            <section class="section why-us" id="nosotros">
+              <div class="container">
+            
+                <div class="why-us-wrapper">
+                  <div class="why-us-content">
+                    <h2 class="headline-md section-title text-center" id="collection-label">¿Por qué Nosotros?</h2>
+            
+                    <p class="why-us-text">
+                      Descubre cómo colaborar con nosotros puede transformar tus operaciones empresariales y potenciar un crecimiento sin precedentes.
+                    </p><br>
+            
+                    <ul class="why-us-list">
+                      <li class="why-us-item">
+                        <h3 class="h3">Alianza Estratégica</h3>
+                        <p>Ofrecemos asesoría experta para alinear soluciones de IA con los objetivos de tu negocio y potenciar su crecimiento</p>
+                      </li>
+                      <li class="why-us-item">
+                        <h3 class="h3">Innovación Constante</h3>
+                        <p>Utilizamos tecnología de IA de última generación para ofrecerte las soluciones más avanzadas.</p>
+                      </li>
+                      <li class="why-us-item">
+                        <h3 class="h3">Personalización</h3>
+                        <p>Cada solución es adaptada a las necesidades específicas de tu negocio.</p>
+                      </li>
+                    </ul>
+            
+                    <button href="https://calendly.com/your-agency/30min" class="btn btn-primary text-center">
+                      Agenda tu cita gratis!!
+                    </button>
+                  </div>
+                  <br>
+                  <figure class="why-us-banner">
+                    <div class="video-container">
+                    <iframe width="500" height="532" src="https://www.youtube.com/embed/o6IBctZ3REw" frameborder="0" allowfullscreen class="w-100 banner-animation"></iframe>
+                  </figure>
+                </div>
+                </div>
+            
+              </div>
+            </section>
+
+
+
+      <!-- 
+        - SELLERS
+      -->
+      
+      <section class="section sellers" aria-labelledby="sellers-label">
         <div class="container">
-
-          <h2 class="headline-md section-title text-center" id="discover-label">¿Porque Nosotros?</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-8.gif" width="500" height="500" loading="lazy"
-                    alt="Genuine Undead #3902" class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-8.jpg" width="32" height="32" loading="lazy" alt="StreetBoy profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@StreetBoy</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Genuine Undead #3902</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+          <hr>
+          <br>
+          <h2 class="headline-md section-title text-center" id="sellers-label">Tecnología de IA de Primera Clase</h2>
+          <p class="why-us-text" align="center">
+            Utilizamos tecnología IA de última generación para ofrecer agentes de voz, chatbots y soluciones codificadas a medida, diseñados específicamente para satisfacer tus necesidades.
+          </p>
+          <ul class="grid-list-1">
+            <li class="grid-item-1">
+              <img src="./assets/images/openai.png" loading="lazy" alt="Avatar 1">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-7.jpg" width="500" height="500" loading="lazy" alt="Windchime #768"
-                    class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-
-                  <div class="countdown">
-                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="span">5d 04h 18m 04s</span>
-                  </div>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-7.jpg" width="32" height="32" loading="lazy" alt="CutieGirl profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@CutieGirl</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Windchime #768</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/gemini.png" loading="lazy" alt="Avatar 2">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-6.gif" width="500" height="500" loading="lazy"
-                    alt="Probably A Label #3277" class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-6.gif" width="32" height="32" loading="lazy" alt="ButterFly profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@ButterFly</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Probably A Label #3277</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/make.png" loading="lazy" alt="Avatar 3">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-5.jpg" width="500" height="500" loading="lazy"
-                    alt="Probably A Label #1711" class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-5.jpg" width="32" height="32" loading="lazy" alt="NorseQueen profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@NorseQueen</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Probably A Label #1711</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/n8n.png" loading="lazy" alt="Avatar 4">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-4.jpg" width="500" height="500" loading="lazy"
-                    alt="Shibuya Scramble Punks" class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-4.jpg" width="32" height="32" loading="lazy" alt="BigBull profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@BigBull</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Shibuya Scramble Punks</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/vapi.png" loading="lazy" alt="Avatar 6">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-3.jpg" width="500" height="500" loading="lazy"
-                    alt="Probably A Label #650" class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-3.jpg" width="32" height="32" loading="lazy" alt="Angel profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@Angel</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Probably A Label #650</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/zapier.png" loading="lazy" alt="Avatar 7">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-2.jpg" width="500" height="500" loading="lazy" alt="Looki #0147"
-                    class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-
-                  <div class="countdown">
-                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                    <span class="span">10d 23h 24m 10s</span>
-                  </div>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-2.jpg" width="32" height="32" loading="lazy"
-                    alt="CrazyAnyone profile" class="img">
-
-                  <a href="#" class="link:hover">@CrazyAnyone</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Looki #0147</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/11labs.png" loading="lazy" alt="Avatar 8">
             </li>
-
-            <li>
-              <div class="discover-card card">
-
-                <div class="card-banner img-holder" style="--width: 500; --height: 500;">
-                  <img src="./assets/images/showcase-1.jpg" width="500" height="500" loading="lazy" alt="Poob #285"
-                    class="img-cover">
-
-                  <button class="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Place Bid</span>
-                  </button>
-                </div>
-
-                <div class="card-profile">
-                  <img src="./assets/images/avatar-1.jpg" width="32" height="32" loading="lazy" alt="Princess profile"
-                    class="img">
-
-                  <a href="#" class="link:hover">@Princess</a>
-                </div>
-
-                <h3 class="title-sm card-title">
-                  <a href="#" class="link:hover">Poob #285</a>
-                </h3>
-
-                <div class="card-meta">
-
-                  <div>
-                    <p>Price</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.5 ETH</span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p>Highest Bid</p>
-
-                    <div class="card-price">
-                      <img src="./assets/images/ethereum.svg" width="16" height="24" loading="lazy" alt="ethereum icon">
-
-                      <span class="span">3.55 ETH</span>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
+            <li class="grid-item-1">
+              <img src="./assets/images/retellai.png" loading="lazy" alt="Avatar 9">
             </li>
-
           </ul>
+          <br>
+          <hr>
+        </section>
+        <!-- 
+        - #NEWSLETTER
+      -->
 
-          <a href="#" class="btn-link link:hover">
-            <span class="span">Explore More</span>
+            <section class="section newsletter" aria-label="newsletter">
+        <div class="container">
+            <div class="newsletter-header">
+              <h2 class="headline-md section-title text-center" id="sellers-label">Reserva tu consulta gratuita de 30 minutos</h2>
+              <p class="section-text body-lg text-center">Discutiremos las necesidades de tu negocio y exploraremos cómo la IA puede ayudarte a alcanzar tus objetivos.</p>
+              <br>          
+              <!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll;" id="my-cal-inline"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
 
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+  Cal.ns["consulta-de-asesoramiento"]("inline", {
+    elementOrSelector:"#my-cal-inline",
+    config: {"layout":"month_view","theme":"dark"},
+    calLink: "luis-miguel-giraldo-gonzalez-ttqikw/consulta-de-asesoramiento",
+  });
+
+  Cal.ns["consulta-de-asesoramiento"]("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+            </div>
+        </div>
+      </section>
+
+      <br><br>
+          <!-- ////SECCION CON EMPRESAS QUE YA HEMOS TRABAJADO -->
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+          <br><br>
+          
+          <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
+            <ion-icon name="logo-reddit" style="font-size: 50px;"></ion-icon>
+          </div>
+          <h2 class="headline-md section-title text-center">¿Preguntas? </h2>
+          
+          <p class="body-md section-text text-center">
+          Habla con Sara, nuestra asistente de Inteligencia Artificial. <br> Estaria muy contenta de ayudarte a resolver todas tus dudas. 
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">Habla con nuestra asistente IA</span>
           </a>
 
         </div>
@@ -757,18 +455,170 @@ class="btn-wsp" target="-blank">
 
 
 
+    </article>
+
+  </main>
 
 
-      <!-- 
-        - SELLERS
-      -->
 
-      <section class="section sellers" aria-labelledby="sellers-label">
-        <div class="container">
 
-          <h2 class="headline-md section-title text-center" id="sellers-label">Sobre Nosotros</h2>
 
-          <ul class="grid-list">
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#">
+            <img src="./assets/images/logo-pymesai.svg" width="126" height="28" loading="lazy" alt="Metalink home">
+          </a>
+
+          <p class="body-md footer-text">
+            Nos especializamos en ofrecer servicios personalizados de automatización con <strong>inteligencia artificial</strong> y consultoría de IA para ayudar a empresas a crecer y escalar sus operaciones.
+          </p>
+
+        </div>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="title-lg footer-list-title">Otros</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Terminos & Condiciones</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Politica de Privacidad</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="title-lg footer-list-title">Detalles de Contacto</p>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:info@pymes-ai.com" class="footer-link">info@pymes-ai.com</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+57 333-290-5349" class="footer-link">+57 333-290-5349</a>
+          </li>
+
+          <li class="footer-list-item">
+            <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
+
+            <a href="" class="footer-link">Medellin, Colombia</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+
+          <ul>
+            <li>
+              <p class="title-lg footer-list-title">Nuestras redes sociales</p>
+            </li>
+          
+            <li class="footer-list-item">
+              <a href="https://www.instagram.com/pymes.ai/" target="_blank">
+                <img src="./assets/images/instagram.png" width="40" height="40" loading="lazy" alt="Instagram">
+              </a>
+          
+              <a href="https://www.tiktok.com" target="_blank">
+                <img src="./assets/images/tiktok.png" width="40" height="40" loading="lazy" alt="TikTok">
+              </a>
+          
+              <a href="https://www.linkedin.com" target="_blank">
+                <img src="./assets/images/linkedin.png" width="40" height="40" loading="lazy" alt="LinkedIn">
+              </a>
+              
+              <a href="https://www.youtube.com" target="_blank">
+                <img src="./assets/images/youtube.png" width="40" height="40" loading="lazy" alt="Youtube">
+              </a>
+            </li>
+          </ul>
+
+        
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="body-md text-center copyright">
+          &copy; 2024 - PYMES.AI
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <!-- <a href="#top" class="back-to-top btn-icon" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a> -->
+
+
+
+
+
+  <div class="body-bg-shape"></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
+
+          <!-- <ul class="grid-list">
 
             <li>
               <div class="seller-card card">
@@ -995,400 +845,4 @@ class="btn-wsp" target="-blank">
               </div>
             </li>
 
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #QNA
-      -->
-
-      <section class="section qna" aria-label="question and answer">
-        <div class="container">
-
-          <h2 class="headline-md section-title text-center">Preguntas Comunes</h2>
-
-          <p class="section-text body-md text-center">
-            We are a huge marketplace dedicated to connecting great artists of all Metalink with their fans and unique
-            token collectors!
-          </p>
-
-          <ul class="qna-list">
-
-            <li class="qna-item">
-              <div class="qna-card" data-accordion>
-
-                <button class="qna-btn" data-accordion-btn>
-                  <h3 class="title-sm">How does it work ?</h3>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </button>
-
-                <div class="qna-content">
-                  <p class="body-md">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="qna-item">
-              <div class="qna-card" data-accordion>
-
-                <button class="qna-btn" data-accordion-btn>
-                  <h3 class="title-sm">Do I need a designer to use Metalink ?</h3>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </button>
-
-                <div class="qna-content">
-                  <p class="body-md">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="qna-item">
-              <div class="qna-card" data-accordion>
-
-                <button class="qna-btn" data-accordion-btn>
-                  <h3 class="title-sm">What do I need to do to start selling ?</h3>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </button>
-
-                <div class="qna-content">
-                  <p class="body-md">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="qna-item">
-              <div class="qna-card" data-accordion>
-
-                <button class="qna-btn" data-accordion-btn>
-                  <h3 class="title-sm">What happens when I receive an order ?</h3>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </button>
-
-                <div class="qna-content">
-                  <p class="body-md">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" aria-label="contact">
-        <div class="container">
-
-          <h2 class="headline-md section-title text-center">Have Question ? Get in touch!</h2>
-
-          <p class="body-md section-text text-center">
-            We are a huge marketplace dedicated to connecting great artists of all Metalink with their fans and unique
-            token collectors!
-          </p>
-
-          <a href="#" class="btn btn-primary">
-            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-            <span class="span">Contact us</span>
-          </a>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #NEWSLETTER
-      -->
-
-      <section class="section newsletter" aria-label="newsletter">
-        <div class="container">
-
-          <div class="newsletter-card">
-
-            <div>
-              <h3 class="headline-md text-center">Subscribe to Newsletter!</h3>
-
-              <p class="body-md card-text text-center">
-                Subscribe to get latest updates and information.
-              </p>
-            </div>
-
-            <div class="input-wrapper">
-              <input type="email" name="email_address" placeholder="Enter your email :" required class="input-field">
-
-              <button class="btn btn-primary">Subscribe</button>
-            </div>
-
-            <ion-icon name="mail-open-outline" aria-hidden="true" class="bg-icon bg-icon-1"></ion-icon>
-
-            <ion-icon name="document-text-outline" aria-hidden="true" class="bg-icon bg-icon-2"></ion-icon>
-
-          </div>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="section footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#">
-            <img src="./assets/images/logo-pymesai.svg" width="126" height="28" loading="lazy" alt="Metalink home">
-          </a>
-
-          <p class="body-md footer-text">
-            Buy, sell and discover exclusive digital assets by the top artists of NFTs world.
-          </p>
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="title-lg footer-list-title">Metalink</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Explore Item</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Live Auction</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Activities</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Wallets</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Creators</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="title-lg footer-list-title">Useful Links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">About Us</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Blog & News</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Terms & Condition</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Privacy policy</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Login</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">
-              <ion-icon name="chevron-forward"></ion-icon>
-
-              <span class="span">Contact Us</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <ul>
-
-            <li>
-              <p class="title-lg footer-list-title">Download the Metalink app</p>
-            </li>
-
-            <li class="footer-list-item">
-              <a href="#">
-                <img src="./assets/images/appstore.png" width="134" height="40" loading="lazy"
-                  alt="Download Metalink app from AppStore">
-              </a>
-
-              <a href="#">
-                <img src="./assets/images/playstore.png" width="134" height="40" loading="lazy"
-                  alt="Download Metalink app from PlayStore">
-              </a>
-            </li>
-
-          </ul>
-
-          <ul>
-
-            <li>
-              <p class="title-lg footer-list-title">Contact Details</p>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
-              <a href="mailto:metalink@nft.com" class="footer-link">metalink@nft.com</a>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+111 234-567-891" class="footer-link">+111 234-567-891</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="body-md text-center copyright">
-          &copy; 2022 Metalink. Developed with <span class="span">❤</span> by codewithsadee.
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top btn-icon" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
-
-
-
-
-
-  <div class="body-bg-shape"></div>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
+          </ul> -->
