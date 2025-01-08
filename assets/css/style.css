@@ -223,6 +223,7 @@ body {
   font-weight: var(--fw-600);
 }
 
+
 .btn-icon {
   width: 39px;
   height: 39px;
@@ -310,7 +311,29 @@ body {
   gap: 32px;
 }
 
+.proceso {
+  padding: var(--section-padding);
+  background-color: var(--oxford-blue);
+  color: var(--white);
+}
 
+.proceso-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.proceso-item .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--blue-violet);
+}
+
+@media (min-width: 768px) {
+  .proceso .grid-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 
 
@@ -838,7 +861,7 @@ body {
 /* .back-to-top {
   background-color: var(--maximum-red);
   position: fixed;
-  bottom: 25px;
+  bottom: 25px; /* Adjust as needed 
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -964,8 +987,9 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
 
 .vapi-btn {
   position: fixed;
-  z-index: 1070;
-
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above other elements */
 }
 
 .grid-list-1 {
@@ -1050,7 +1074,9 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
     margin-bottom: 20px;
   }
   
-  
+  .grid-item-1 img{
+    filter: brightness(0) saturate(100%) invert(24%) sepia(74%) saturate(3795%) hue-rotate(255deg) brightness(82%) contrast(111%);
+  }
 
 }
 
@@ -1093,15 +1119,8 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
   .container,
   .header .container { max-width: 768px; }
 
-  .grid-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .grid-list-1 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
+  .grid-list { grid-template-columns: repeat(2, 1fr); }
+  .grid-list-1 { grid-template-columns: repeat(2, 1fr); }
 
   .section-text {
     max-width: 575px;
@@ -1143,12 +1162,7 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
     align-items: flex-start;
   }
 
-  .top-collection .slider {
-    --slider-item: 2;
-
-    margin-inline: -16px;
-    padding-inline: 8px;
-  }
+  .top-collection .slider { --slider-item: 2; }
 
   .top-collection .slider-item { padding-inline: 12px; }
 
@@ -1199,6 +1213,7 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
   .grid-item-1 img{
     filter: brightness(0) saturate(100%) invert(24%) sepia(74%) saturate(3795%) hue-rotate(255deg) brightness(82%) contrast(111%);
   }
+  
 
 }
 
@@ -1461,4 +1476,34 @@ LO QUE AGREGUE DE ADICIONAL (ESTO NO ESTÁ RESPONSIVE) */
 
 
 
+}
+
+
+/* Estilo para la ventana emergente */
+.popup {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }

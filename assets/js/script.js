@@ -151,3 +151,31 @@ const accordionInit = function (currentAccordion) {
 }
 
 for (let i = 0, len = accordions.length; i < len; i++) { accordionInit(accordions[i]); }
+
+
+
+// Selecciona elementos del DOM
+const openPopupBtn = document.getElementById('openPopup');
+const closePopupBtn = document.getElementById('closePopup');
+const popup = document.getElementById('popup');
+
+// Abrir la ventana emergente
+if (openPopupBtn) {
+    openPopupBtn.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra la ventana
+    });
+}
+
+// Cerrar la ventana emergente
+if (closePopupBtn) {
+    closePopupBtn.addEventListener('click', () => {
+        popup.style.display = 'none'; // Oculta la ventana
+    });
+}
+
+// Cerrar la ventana si se hace clic fuera del contenido
+window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.style.display = 'none';
+    }
+});

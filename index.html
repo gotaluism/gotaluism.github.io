@@ -51,7 +51,7 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
   <!-- Cal element-click embed code ends -->
   <!-- CAL.COM EMBED -->
 
-<div id="vapi" class="vapi-btn"></div>
+
 <script>
   var vapiInstance = null;
   const assistant = "22bb4639-60b5-4e1a-8ff6-dadff71087fc"; // Substitute with your assistant ID
@@ -106,7 +106,7 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
 
 </script>
 
-<a href="https://api.whatsapp.com/send/?phone=573332905349&text=Hola%2C+deseo+m%C3%A1s+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0"
+<a href="https://api.whatsapp.com/send/?phone=573332372301&text=Hola%2C+deseo+m%C3%A1s+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0"
 class="btn-wsp" target="-blank">
 <i class="fab fa-whatsapp"></i></a>
 
@@ -140,7 +140,7 @@ class="btn-wsp" target="-blank">
           </li>
 
           <li>
-            <a href="https://api.whatsapp.com/send/?phone=573332905349&text=Hola%2C+deseo+m%C3%A1s+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0" class="navbar-link label-lg link:hover">Contactanos</a>
+            <a href="https://api.whatsapp.com/send/?phone=573332372301&text=Hola%2C+deseo+m%C3%A1s+informaci%C3%B3n+de+sus+servicios&type=phone_number&app_absent=0" class="navbar-link label-lg link:hover">Contáctanos</a>
           </li>
 
           <!-- <li>
@@ -195,10 +195,20 @@ class="btn-wsp" target="-blank">
             Lleva tu negocio a la velocidad del futuro con IA que transforma cada proceso en una oportunidad de crecimiento
           </p>
 
-          <a href="#" class="btn">Habla con un Asesor IA</a>
+          <a id="openPopup" href="#" class="btn">Habla con un Asesor IA</a>
 
         </div>
       </section>
+
+          <!-- Ventana Pop-up -->
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopup" class="close-btn">&times;</span>
+                <h2>Ventana Emergente</h2>
+                <p>Este es el contenido de la ventana emergente.</p>
+                
+            </div>
+        </div>
 
       <section id="servicios" class="section top-collection" aria-labelledby="collection-label">
         <div class="container">
@@ -237,7 +247,7 @@ class="btn-wsp" target="-blank">
             <li>
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
-                  <a href="#" class="link:hover">Hiperautomatizaciones con IA</a>
+                  <a href="#" class="link:hover">Hiperautomatizaciónes con IA</a>
                 </h3><br>
                 <figure class="card-banner small-logo">
                   <img src="./assets/images/workflow.png" loading="lazy" alt="Illustrations Collection" class="img-cover">
@@ -261,7 +271,19 @@ class="btn-wsp" target="-blank">
                 </div>
               </div>
             </li>
-
+            <li>
+              <div class="collection-card card">
+                <h3 class="title-md card-title text-center">
+                  <a href="#" class="link:hover">Agentes RAG</a>
+                </h3>
+                <figure class="card-banner small-logo">
+                  <img src="./assets/images/rag.png" loading="lazy" alt="Animations Collection" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-text">Obtén respuestas inmediatas y precisas directamente de los datos, políticas y procedimientos de tu empresa, garantizando siempre la máxima confidencialidad.</p>
+                </div>
+              </div>
+            </li>
             <li>
               <div class="collection-card card">
                 <h3 class="title-md card-title text-center">
@@ -277,31 +299,12 @@ class="btn-wsp" target="-blank">
               </div>
             </li>
 
-            <li>
-              <div class="collection-card card">
-                <h3 class="title-md card-title text-center">
-                  <a href="#" class="link:hover">RAG</a>
-                </h3>
-                <figure class="card-banner small-logo">
-                  <img src="./assets/images/rag.png" loading="lazy" alt="Animations Collection" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <p class="card-text">Combinamos la generación de respuestas con la recuperación de información relevante, mejorando la precisión y relevancia en tiempo real para una interacción más eficiente.</p>
-                </div>
-                <div class="coming-soon">Próximamente</div>
-              </div>
-            </li>
+
 
           </ul>
       
         </div>
       </section>
-
-
-
-<!-- 
-      <h4 class="text-center"><strong>Confiable</strong></h4><p class="card-text">Construido con tecnología robusta, probado para precisión y escalabilidad.</p> -->
-
 
       <!-- 
         - #DISCOVER ITEM
@@ -395,6 +398,35 @@ class="btn-wsp" target="-blank">
           </ul>
           <br>
           <hr>
+        </section>
+
+        <section id="proceso" class="section proceso" aria-labelledby="proceso-label">
+          <div class="container">
+            <h2 class="headline-md section-title text-center" id="proceso-label">Nuestro Proceso </h2>
+            <ul class="grid-list">
+              <li class="proceso-item">
+                <div class="icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="title-sm">1. Planificamos la hoja de ruta</h3>
+                <p>Tomamos el tiempo para entender tus necesidades, trazando un plan estratégico para tu solución a medida.</p>
+              </li>
+              <li class="proceso-item">
+                <div class="icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="title-sm">2. Construimos tu MVP</h3>
+                <p>Nuestros desarrolladores comenzarán a construir tu solución AI personalizada: intuitiva, hermosa y funcional.</p>
+              </li>
+              <li class="proceso-item">
+                <div class="icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="title-sm">3. Itera y lanza</h3>
+                <p>Trabajamos en sprints ágiles quincenales. Donde trabajaremos para impulsar la hoja de ruta e iterar en tiempo real.</p>
+              </li>
+            </ul>
+          </div>
         </section>
         <!-- 
         - #NEWSLETTER
@@ -529,7 +561,7 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
           <li class="footer-list-item">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 
-            <a href="tel:+57 333-290-5349" class="footer-link">+57 333-290-5349</a>
+            <a href="tel:+57 305-340-3727" class="footer-link">+57 305-340-3727</a>
           </li>
 
           <li class="footer-list-item">
@@ -551,15 +583,15 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
                 <img src="./assets/images/instagram.png" width="40" height="40" loading="lazy" alt="Instagram">
               </a>
           
-              <a href="https://www.tiktok.com" target="_blank">
+              <!-- <a href="https://www.tiktok.com" target="_blank">
                 <img src="./assets/images/tiktok.png" width="40" height="40" loading="lazy" alt="TikTok">
-              </a>
+              </a> -->
           
-              <a href="https://www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/company/pymes-ai" target="_blank">
                 <img src="./assets/images/linkedin.png" width="40" height="40" loading="lazy" alt="LinkedIn">
               </a>
               
-              <a href="https://www.youtube.com" target="_blank">
+              <a href="https://www.youtube.com/@gotaluism" target="_blank">
                 <img src="./assets/images/youtube.png" width="40" height="40" loading="lazy" alt="Youtube">
               </a>
             </li>
@@ -576,7 +608,7 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
       <div class="container">
 
         <p class="body-md text-center copyright">
-          &copy; 2024 - PYMES.AI
+          &copy; 2025 - PYMES.AI
         </p>
 
       </div>
@@ -620,234 +652,3 @@ Cal("init", "consulta-de-asesoramiento", {origin:"https://cal.com"});
 </body>
 
 </html>
-
-
-
-          <!-- <ul class="grid-list">
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-1.jpg" width="64" height="64" loading="lazy"
-                    alt="Steven Townsend profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Steven Townsend</a>
-                  </h3>
-
-                  <p class="user-name label-md">@StreetBoy</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Steven Townsend">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-2.jpg" width="64" height="64" loading="lazy"
-                    alt="Tiffany Betancourt profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Tiffany Betancourt</a>
-                  </h3>
-
-                  <p class="user-name label-md">@CutieGirl</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Tiffany Betancourt">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-3.jpg" width="64" height="64" loading="lazy"
-                    alt="Jacqueline Burns profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Jacqueline Burns</a>
-                  </h3>
-
-                  <p class="user-name label-md">@ButterFly</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Jacqueline Burns">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-4.jpg" width="64" height="64" loading="lazy"
-                    alt="Mari Harrington profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Mari Harrington</a>
-                  </h3>
-
-                  <p class="user-name label-md">@NorseQueen</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Mari Harrington">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-5.jpg" width="64" height="64" loading="lazy"
-                    alt="Floyd Glasgow profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Floyd Glasgow</a>
-                  </h3>
-
-                  <p class="user-name label-md">@BigBull</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Floyd Glasgow">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-6.gif" width="64" height="64" loading="lazy"
-                    alt="Donna Schultz profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Donna Schultz</a>
-                  </h3>
-
-                  <p class="user-name label-md">@Angel</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Donna Schultz">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-7.jpg" width="64" height="64" loading="lazy"
-                    alt="Joshua Morris profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Joshua Morris</a>
-                  </h3>
-
-                  <p class="user-name label-md">@CrazyAnyone</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Joshua Morris">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-8.jpg" width="64" height="64" loading="lazy"
-                    alt="Rosaria Vargas profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Rosaria Vargas</a>
-                  </h3>
-
-                  <p class="user-name label-md">@Princess</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Rosaria Vargas">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="seller-card card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/avatar-2.jpg" width="64" height="64" loading="lazy"
-                    alt="Carl Williams profile">
-
-                  <ion-icon name="checkmark-circle"></ion-icon>
-                </figure>
-
-                <div class="card-title-wrapper">
-                  <h3 class="title-sm">
-                    <a href="#" class="link:hover">Carl Williams</a>
-                  </h3>
-
-                  <p class="user-name label-md">@LooserBad</p>
-                </div>
-
-                <button class="btn-icon outline" aria-label="Hire Carl Williams">
-                  <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
-                </button>
-
-              </div>
-            </li>
-
-          </ul> -->
